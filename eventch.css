@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 600px; /* Increased width for the form box */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.form {
+    text-align: left;
+}
+.a{
+    /* border: 2px dotted red; */
+    width: 160%;
+}
+
+#registrationFees {
+    height: 36px; /* Adjust the height to your preference */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+#eventTime{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Adjust the maximum width to your preference */
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #264653;
+    display: block;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    color: #264653;
+    border: 2px solid #264653;
+    font-weight: 700;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    font-size: 17px; */
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: #264653;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 480px) {
+    .inputBox {
+        margin-bottom: 10px;
+    }
+    .inputRow {
+        flex-direction: column;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 12px;
+    }
+}

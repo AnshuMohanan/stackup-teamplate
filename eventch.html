@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="eventch.css">
+    <title>Event Creation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Event Creation</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="inputBox">
+                    <label for="eventName">Event Name *</label>
+                    <input type="text" id="eventName" name="eventName" placeholder="Enter event name" required>
+                </div>
+                <div class="inputBox">
+                    <label for="eventtimeDate">Event Date *</label>
+                    <input type="datetime-local" id="eventtimeDate" name="EventDateTime" required>
+                </div>
+                <div class="inputRow">
+                    <div class="inputBox">
+                        <label for="venue">Venue *</label>
+                        <div class="a"><input type="text" id="venue" name="venue" placeholder="Enter venue"></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="registrationFees">Reg: Fees *</label>
+                        <input type="number" id="registrationFees" name="registrationFees" placeholder="   Registration fees" required>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <label for="requirements">Requirements *</label>
+                    <textarea id="requirements" name="requirements" placeholder="Requirements:In Points" required></textarea>
+                </div>
+                <div class="inputBox">
+                    <label for="eventDetails">Event Details *</label>
+                    <textarea id="eventDetails" name="eventDetails" placeholder="Enter event details"></textarea>
+                </div>
+                <div><h6 style="font-size: 18px; font-weight: 600; color: #264653; font-family: 'Poppins', sans-serif; padding-bottom: 7px;" >Organiser Info:</h6></div>
+                <div class="inputRow">
+                    <div class="inputBox">
+                        <label for="organizerEmail">Email Id *</label>
+                        <div class="a"><input type="email" id="organizerEmail" name="organizerEmail" placeholder="Enter organizer's email" required></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="organizerPhone">Phone Number *</label>
+                        <input type="tel" id="organizerPhone" name="organizerPhone" placeholder="Enter organizer's phone number" required>
+                    </div>
+                </div>
+                <div><h6 style="font-size: 18px; font-weight: 600; color: #264653;font-family: 'Poppins', sans-serif; padding-bottom: 7px;" >Contact person Info:</h6></div>
+                <div class="inputRow">
+                    <div class="inputBox">
+                        <label for="contactPerson1Email"> 1:Email *</label>
+                        <div class="a"><input type="email" id="contactPerson1Email" name="contactPerson1Email" placeholder="Enter contact person 1's email" required></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="contactPerson1Phone"> 1:Phone Number *</label>
+                        <input type="tel" id="contactPerson1Phone" name="contactPerson1Phone" placeholder="Enter contact person 1's phone number" required>
+                    </div>
+                </div>
+                <div class="inputRow">
+                    <div class="inputBox">
+                        <label for="contactPerson1Email"> 2:Email</label>
+                        <div class="a"><input type="email" id="contactPerson2Email" name="contactPerson2Email" placeholder="Enter contact person 2's email" ></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="contactPerson1Phone"> 2:Phone Number</label>
+                        <input type="tel" id="contactPerson2Phone" name="contactPerson2Phone" placeholder="Enter contact person 2's phone number">
+                    </div>
+                </div>
+                <div align="center">
+                    <button type="submit" class="btn">
+                        <div style="padding: 6px;">
+                        Create Event
+                    </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
