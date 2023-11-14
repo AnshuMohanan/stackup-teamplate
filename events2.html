@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="events2.css">
+  <link rel="stylesheet" href="headerfooter.css">
+  <title>Document</title>
+  <style>
+    header {
+      background-color: whitesmoke;
+    }
+
+    .container2 {
+      background-color: whitesmoke;
+
+    }
+
+    .button {
+      --color:#f17969;
+      padding: 0.8em 1.7em;
+      background-color: transparent;
+      border-radius: .3em;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: .5s;
+      font-weight: 400;
+      font-size: 11px;
+      border: 1px solid;
+      font-family: inherit;
+      text-transform: uppercase;
+      color: var(--color);
+      z-index: 1;
+      height: 35px;
+      width: 120px;
+    }
+
+    .button::before,
+    .button::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+      background-color: var(--color);
+      transition: 1s ease;
+    }
+
+    .button::before {
+      top: -1em;
+      left: -1em;
+    }
+
+    .button::after {
+      left: calc(100% + 1em);
+      top: calc(100% + 1em);
+    }
+
+    .button:hover::before,
+    .button:hover::after {
+      height: 410px;
+      width: 410px;
+    }
+
+    .button:hover {
+      color: rgb(10, 25, 30);
+    }
+
+    .button:active {
+      filter: brightness(.8);
+    }
+    .button a{
+      /* list-style-type: none; */
+      text-decoration: none;
+      color: #f17969;
+    }
+    .button a:hover{
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="whole">
+    <!-- -------------------------header ------------------------------- -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <small id="navbar__logo">Events-<span1>Upcoming</span1></small>
+          <ul class="navbar__menu">
+            <li class="navbar__item"><a href="home.html" class="navbar__links" id="home-page">Home</a></li>
+            <li class="navbar__item"><a href="login.html" class="navbar__links" id="category-page">Login</a></li>
+            <li class="navbar__item"><a href="events.html" class="navbar__links" id="about-page">Events</a></li>
+            <li class="navbar__item"><a href="sighup.html" class="navbar__links" id="about-page">Account</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <hr> -->
+    </header>
+    <!-- ---------------------------------header end------------------------------ -->
+    <div class="container">
+      <div class="panel">
+        <div class="ring">
+          <div class="card card1"></div>
+          <div class="border">
+            <p class="title">Vasantholsavam 23</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">13/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">3:20pm-7:45pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Amphitheater</h6>
+              </div>
+              <button class="button"><a href="vasantholsavam'23.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card2"></div>
+          <div class="border">
+            <p class="title">NSS: Alappuzha beach cleaning activity</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">5/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">3:00pm-5:30pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Alappuzha</h6>
+              </div>
+              <button class="button"><a href="alapuzhabeachcleaning.html"> Know More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card3"></div>
+          <div class="border">
+            <p class="title">IEEE RASSE 2023</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">8/11/23-11/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">9:00am-4:00pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Amphitheater</h6>
+              </div>
+              <button class="button"><a href="IEEERASSE.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card4"></div>
+          <div class="border">
+            <p class="title">Expert Talk: INDIA'S ENERGY TRANSITION TOWARDS GREEN SHIFT:</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">2/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">1:30pm-3:00pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">VB Seminar Hall</h6>
+              </div>
+              <button class="button"><a href="experttalk.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card1"></div>
+          <div class="border">
+            <p class="title">Vasantholsavam 23</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">13/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">3:20pm-7:45pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Amphitheater</h6>
+              </div>
+              <button class="button"><a href="vasantholsavam'23.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card2"></div>
+          <div class="border">
+            <p class="title">NSS: Alappuzha beach cleaning activity</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">5/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">3:00pm-5:30pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Alappuzha</h6>
+              </div>
+              <button class="button"><a href="alapuzhabeachcleaning.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card3"></div>
+          <div class="border">
+            <p class="title">IEEE RASSE 2023</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">8/11/23-11/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">9:00am-4:00pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">Amphitheater</h6>
+              </div>
+              <button class="button"><a href="IEEERASSE.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="ring">
+          <div class="card card4"></div>
+          <div class="border">
+            <p class="title">Expert Talk: INDIA'S ENERGY TRANSITION TOWARDS GREEN SHIFT:</p>
+            <div class="slide">
+              <div class="line">
+                <h6 class="para">Date:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">2/11/23</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Time:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">1:30pm-3:00pm</h6>
+              </div>
+              <div class="line">
+                <h6 class="para">Venue:</h6> <i class="fa fa-plane" aria-hidden="true"></i>
+                <h6 class="para">VB Seminar Hall</h6>
+              </div>
+              <button class="button"><a href="experttalk.html"> Know More </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- footer -------------------- -->
+    <div class="footer">
+      <!-- <hr> -->
+      <div class="container2">
+        <div class="row">
+          <div class="foot1">
+            <h3>Tech-<span1>Architects</span1>
+            </h3>
+            <ul>
+              <li class="tag">Anshu Mohanan</li>
+              <li class="tag">Prannoy Roy</li>
+              <li class="tag">Jibin Bino</li>
+              <li class="tag">Gishnu Ravindran</li>
+            </ul>
+          </div>
+          <div class="foot2">
+            <h3>Tech-<span1>Architects</span1>
+            </h3>
+            <ul>
+              <li class="tag"><a href="sighup.html">my Account</a></li>
+              <li class="tag"><a href="sighup.html">Contact Us</a></li>
+              <li class="tag"><a href="events.html">Events</a></li>
+              <li class="tag"><a href="login.html">login</a></li>
+            </ul>
+          </div>
+          <div class="foot3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li class="tag"><a href="https://instagram.com/_gish.nu_?igshid=MzNlNGNkZWQ4Mg=="
+                  target="_blank">Instragram</a></li>
+              <li class="tag"><a href="https://youtube.com/@SIHROLEXSG?feature=shared" target="_blank">Youtube</a></li>
+              <li class="tag"><a href="events.html">Facebook</a></li>
+              <li class="tag"><a href="login.html">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
